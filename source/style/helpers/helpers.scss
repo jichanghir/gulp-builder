@@ -1,0 +1,107 @@
+.h-clear {
+    clear: both;
+}
+
+.h-invisible {
+    height: 0px;
+}
+
+.h-disapear {
+    display: none;
+}
+
+.h-transition ,
+.h-transition * {
+    transition: all 0.15s;
+}
+
+.h-fleft {
+    float: left;
+}
+
+.h-fright {
+    float: right;
+}
+
+.h-fleft50 {
+    float: left; 
+    width: 50%;
+}
+.h-right50 {
+    float: right; 
+    width: 50%;
+}
+
+.h-blocks {
+    display: inline-block;
+    width: 100%;
+}
+
+.h-center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.h-hyphens {
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+.h-blackout {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0% 0%;
+    z-index: 99;
+    display: none;
+}
+
+.h-deactivate {
+    pointer-events: none;
+}
+
+.h-absolute {
+    position: absolute;
+}
+
+.h-relative {
+    position: relative;
+}
+
+.h-blocks {
+    display: inline-block; 
+    width: 100%;
+}
+
+.h-inline {
+    display: inline-block !important;
+}
+
+.h-first{
+    margin-left: 0;
+}
+
+.h-last{
+    margin-right: 0;
+}
+
+.h-ta-right {
+    text-align: right;
+}
+
+.h-ta-left {
+    text-align: left;
+}
+
+.h-hidden {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .h-adaptive-hide {
+        display: none;
+    }
+}

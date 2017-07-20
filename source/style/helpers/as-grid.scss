@@ -1,0 +1,266 @@
+* {
+    vertical-align: baseline;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header,nav,section,article,aside,footer {
+    display: block;
+}
+
+html,body
+{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+/* -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;*/
+}
+
+a img {
+    border: none;
+}
+
+textarea {
+    outline: none; resize: none;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+input, textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+
+    outline: none;
+    resize: none;
+}
+
+img {
+    max-width: 100%;
+}
+/*======================*/
+
+/*--------flex---------------*/
+
+.flex {
+    width: 100%;
+
+    display: flex;
+}
+
+.flex > div,
+.flex > figure {
+    box-sizing: border-box;
+}
+
+.flex__center--row-wh {
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.flex__center--row-w {
+
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+.flex__center--row-h {
+
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.flex__center--column-wh {
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.flex__center--column-w {
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.flex__center--column-h {
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+/*flex-grid*/
+.flex__two-col,
+.flex__three-col,
+.flex__four-col,
+.flex__five-col {
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+}
+
+.flex__one-col > div,
+.flex__one-col > figure {
+    width: 100%;
+}
+
+.flex__two-col > div,
+.flex__two-col > figure {
+    width: 50%;
+}
+
+.flex__three-col > div,
+.flex__three-col > figure {
+    width: 33.333333%;
+}
+
+.flex__four-col > div,
+.flex__four-col > figure {
+    width: 25%;
+}
+
+.flex__five-col > div,
+.flex__five-col > figure {
+    width: 20%;
+}
+
+.flex__col-2-3 {
+    width: 63.3333333%;
+    margin-left: 1.6666666666%;
+    margin-right: 1.6666666666%;
+}
+
+.flex__col-3-5 {
+    width: 57%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+
+/*this style must be important after flex*/
+.flex__wrap
+{
+    flex-wrap: wrap;
+}
+
+.flex__space-between {
+    justify-content: space-between;
+}
+
+.flex__stretch {
+   align-items: stretch;
+}
+
+.flex__column {
+    flex-direction: column;
+}
+
+.flex__end {
+    justify-content: flex-end;
+}
+
+/*---------------------------------*/
+
+.flex__two-col.flex__padding > div:nth-child(2n + 2){
+    padding-left: 10px;
+}
+
+.flex__two-col.flex__padding > div:nth-child(2n + 1){
+    padding-right: 10px;
+}
+
+.flex__three-col.flex__padding > div {
+    padding: 0 10px;
+}
+
+.flex__three-col.flex__padding > div:nth-child(3n + 3){
+    padding: 0 0 0 10px;
+}
+
+.flex__three-col.flex__padding > div:nth-child(3n + 1) {
+    padding: 0 10px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    .flex__two-col,
+    .flex__three-col,
+    .flex__four-col,
+    .flex__five-col {
+        flex-direction: column;
+
+        justify-content: flex-start;
+
+        align-items: flex-start;
+    }
+
+    .flex__two-col > div,
+    .flex__two-col > figure,
+    .flex__three-col > div,
+    .flex__three-col > figure,
+    .flex__four-col > div,
+    .flex__four-col > figure,
+    .flex__five-col > div,
+    .flex__five-col > figure {
+        width: 100%;
+    }
+
+    /*.flex-two_col > div:nth-child(2n + 1) {
+        margin-bottom: 20px;
+    }*/
+
+    .flex__two_col.flex__padding > div:nth-child(2n + 2) {
+        padding-left: 0px;
+    }
+
+    .flex__two_col.flex__padding > div:nth-child(2n + 1) {
+        padding-right: 0px;
+    }
+
+    .flex__three_col.flex__padding > div:nth-child(3n + 3) {
+        padding: 0 0 0 0px;
+    }
+
+    .flex__three_col.flex__padding > div:nth-child(3n + 1) {
+        padding: 0 0px 0 0;
+    }
+
+    .flex__three_col.flex__padding > div {
+        padding: 0 0px;
+        margin-bottom: 20px;
+    }
+
+    .flex__adaptive--column-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .flex__adaptive--row-reverse {
+        flex-direction: row-reverse;
+    }
+}
