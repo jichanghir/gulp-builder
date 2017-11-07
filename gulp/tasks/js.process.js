@@ -7,5 +7,6 @@ module.exports = function() {
       //.pipe($.gp.concat('script.js'))
       .pipe($.gp.sourcemaps.write())
       .pipe($.gulp.dest($.config.root + '/js'))
+      .pipe($.browserSync.stream());
   })
 };
