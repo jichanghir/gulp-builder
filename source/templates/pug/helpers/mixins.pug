@@ -1,0 +1,7 @@
+mixin select (className, options, selectedOption)
+    select(class=`${className}`)
+        each option in options
+            if option === selectedOption
+                option(value=`${option}` selected)= option
+            else
+                option(value=`${option}`)= option

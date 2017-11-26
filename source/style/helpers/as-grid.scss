@@ -39,7 +39,7 @@ textarea:focus, input:focus {
     outline: none;
 }
 
-input, textarea {
+input, textarea, select {
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
@@ -51,6 +51,10 @@ input, textarea {
 
 img {
     max-width: 100%;
+}
+
+table {
+    border-collapse: collapse;
 }
 /*======================*/
 
@@ -163,6 +167,13 @@ img {
     margin-right: 1.5%;
 }
 
+.flex__col-1-4 {
+    width: 25%;
+}
+
+.flex__col-3-4 {
+    width: 75%;
+}
 
 /*this style must be important after flex*/
 .flex__wrap

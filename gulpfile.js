@@ -35,8 +35,8 @@ $.gulp.task('default', $.gulp.series(
     'js:process',
     'copy:image',
     'copy:fonts',
-    'copy:html'
-    //'css:foundation'
+    'copy:html',
+    'css:foundation'
     //'spritesmith',
     //'sprite:svg'
   ),
